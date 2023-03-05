@@ -70,11 +70,10 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Given&#xD;&#xA;-Config loaded&#xD;&#xA;-Test Queue Item ready to work&#xD;&#xA;When&#xD;&#xA;-Execute GetTransactionData worflow&#xD;&#xA;Then&#xD;&#xA;-Queue Item loaded successfully&#xD;&#xA;Finally&#xD;&#xA;-Close Queue Item" DisplayName="Sequence - Get Test Queue Item Data" sap:VirtualizedContainerService.HintSize="658,1631" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Given&#xA;-Config loaded&#xA;-Test Queue Item ready to work&#xA;When&#xA;-Execute GetTransactionData worflow&#xA;Then&#xA;-Queue Item loaded successfully&#xA;Finally&#xA;-Close Queue Item" DisplayName="Sequence - Get Test Queue Item Data" sap:VirtualizedContainerService.HintSize="658,1631" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
       <Variable x:TypeArguments="x:Int32" Default="1" Name="TransactionNumber" />
@@ -88,9 +87,6 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message - GetTransactionDataTestCase" sap:VirtualizedContainerService.HintSize="596,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;GetTransactionDataTestCase started.&quot;]" />
     <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="596,533" sap2010:WorkflowViewState.IdRef="Sequence_2">
-      <Sequence.Variables>
-        <Variable x:TypeArguments="x:String" Name="QueueItemID" />
-      </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -121,27 +117,13 @@
       </Assign>
       <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="[Config.Item(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="[Config.Item(&quot;OrchestratorQueueName&quot;).ToString]">
         <ui:AddQueueItem.ItemInformation>
-          <InArgument x:TypeArguments="x:String" x:Key="First Name">
-            <Literal x:TypeArguments="x:String">First</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="Last Name">
-            <Literal x:TypeArguments="x:String">Last</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="Address">
-            <Literal x:TypeArguments="x:String">Address</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="Phone Number">
-            <Literal x:TypeArguments="x:String">Phone #</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="Role in Company">
-            <Literal x:TypeArguments="x:String">Role</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="Email">
-            <Literal x:TypeArguments="x:String">Email</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="Company Name">
-            <Literal x:TypeArguments="x:String">Company</Literal>
-          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="First Name">First</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Last Name">Last</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Address">Address</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Phone Number">Phone #</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Role in Company">Role</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Email">Email</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Company Name">Company</InArgument>
         </ui:AddQueueItem.ItemInformation>
       </ui:AddQueueItem>
     </Sequence>
