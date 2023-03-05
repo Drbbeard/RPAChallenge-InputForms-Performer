@@ -1,0 +1,95 @@
+{
+  "name": "RPAChallenge_InputForms_Performer",
+  "description": "Works queue items provided by RPAChallenge_InputForms_Dispatcher",
+  "main": "Main.xaml",
+  "dependencies": {
+    "DBEV.RPAChallenge.Activites": "[1.0.0-alpha.7]",
+    "UiPath.Excel.Activities": "[2.17.0-preview]",
+    "UiPath.System.Activities": "[22.10.4]",
+    "UiPath.Testing.Activities": "[22.12.0-preview]",
+    "UiPath.UIAutomation.Activities": "[22.10.4]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.12.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "de31f3b0-399f-49ad-808b-a48e96559138",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ec607344-92dd-4aa8-996d-54d1dfba43a0",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Test_InitAllSettings.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d3a75bde-96d0-4d64-b466-c6446c7061e2",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Test_InitAllApplications.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c74c181d-7b5e-4aae-ac92-170e1ab181e7",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\Test_GetTransactionData.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "87ba8708-d19a-43f6-914f-cfebb55e1776",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\Test_Process.xaml"
+      }
+    ],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "d9409d46-1c09-4b65-b437-e923fbb0ce74",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}

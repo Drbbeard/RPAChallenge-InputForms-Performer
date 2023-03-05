@@ -1,0 +1,245 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ProcessTestCase" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1771,2107" sap2010:WorkflowViewState.IdRef="REFTestCase_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="64">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="66">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.Entity</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Given&#xD;&#xA;-Config loaded&#xD;&#xA;-Browser instance opened to RPA Challenge Input Forms page&#xD;&#xA;-Valid Transactionitem&#xD;&#xA;When&#xD;&#xA;-Execute Process workflow&#xD;&#xA;Then&#xD;&#xA;-Transaction Item Submitted Successfully&#xD;&#xA;Finally&#xD;&#xA;-Close RPA Challenge Input Forms browser instance" DisplayName="ProcessTestCase" sap:VirtualizedContainerService.HintSize="658,2042" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
+      <Variable x:TypeArguments="ui:QueueItem" Name="TransactionItem" />
+      <Variable x:TypeArguments="x:Int32" Name="TransactionNumber">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="1" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="ui:UiElement" Name="RPAChallenge_Browser" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message - ProcessTestCase" sap:VirtualizedContainerService.HintSize="596,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;ProcessTestCase started.&quot;]" />
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="596,671" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke InitAllSettings workflow" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Framework\InitAllSettings.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFile">
+            <Literal x:TypeArguments="x:String">Data\Config.xlsx</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_ConfigSheets">
+            <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;Settings&quot;,&quot;Constants&quot;}" />
+          </InArgument>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">
+            <mva:VisualBasicReference x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="Config" />
+          </OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke InitAllApplications workflow" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Framework\InitAllApplications.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
+            <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="Config" />
+          </InArgument>
+          <OutArgument x:TypeArguments="ui:UiElement" x:Key="out_Browser_RPAChallenge">
+            <mva:VisualBasicReference x:TypeArguments="ui:UiElement" ExpressionText="RPAChallenge_Browser" />
+          </OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <Assign DisplayName="Assign - TransactionNumber" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Int32">[TransactionNumber]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Int32">1</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:MultipleAssign DisplayName="Multiple Assign - Instantiate Transaction Item" sap:VirtualizedContainerService.HintSize="434,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="ui:QueueItem">[TransactionItem]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="ui:QueueItem">[New QueueItem]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[TransactionItem.SpecificContent]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" xml:space="preserve">[New Dictionary(Of String,Object) From { 
+{"First Name", "First"},
+{"Last Name", "Last"},
+{"Address", "Address"},
+{"Role in Company", "Role"},
+{"Company Name", "Company"},
+{"Phone Number", "Phone #"},
+{"Email", "Email"} }]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+      </ui:MultipleAssign>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="596,224" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Process workflow" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Framework\Process.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[TransactionItem]</InArgument>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
+          <InArgument x:TypeArguments="ui:UiElement" x:Key="in_RPAChallenge_Browser">[RPAChallenge_Browser]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="596,398" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute - Round 2 Button Exists" sap:VirtualizedContainerService.HintSize="534,287" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+        <uta:VerifyControlAttribute.ActivityToTest>
+          <ActivityAction>
+            <uix:NCheckState DisplayName="Check App State 'Round 2'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,177" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V3">
+              <uix:NCheckState.Exists>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <VariableReference x:TypeArguments="x:Boolean">
+                    <VariableReference.Variable>
+                      <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID0" Name="_autogenerated_Exists" />
+                    </VariableReference.Variable>
+                  </VariableReference>
+                </OutArgument>
+              </uix:NCheckState.Exists>
+              <uix:NCheckState.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <VariableReference x:TypeArguments="ui:UiElement">
+                    <VariableReference.Variable>
+                      <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                    </VariableReference.Variable>
+                  </VariableReference>
+                </OutArgument>
+              </uix:NCheckState.OutUiElement>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://rpachallenge.com/" DesignTimeRectangle="19, 885, 453, 54" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Round 2'" FullSelectorArgument="&lt;webctrl tag='BUTTON' innertext='Round 2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' innertext='Round 2' type='' class='col s12 m12 l12 btn-large uiColorButton' aaname='Round 2' check:text='Round 2' /&gt;" Guid="cf02bb8b-fe22-4301-8038-8610099070a0" ImageBase64="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" InformativeScreenshot="c6cb9fccb80fdcedc278ada40cda8c0b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </ActivityAction>
+        </uta:VerifyControlAttribute.ActivityToTest>
+        <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+          <ActivityFunc x:TypeArguments="x:Object">
+            <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_1">
+              <uta:ArgumentsBridge.Input>
+                <InArgument x:TypeArguments="x:Object">
+                  <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
+                </InArgument>
+              </uta:ArgumentsBridge.Input>
+            </uta:ArgumentsBridge>
+          </ActivityFunc>
+        </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+        <uta:VerifyControlAttribute.Expression>
+          <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+        </uta:VerifyControlAttribute.Expression>
+      </uta:VerifyControlAttribute>
+    </Sequence>
+    <Sequence DisplayName="... Finally" sap:VirtualizedContainerService.HintSize="596,224" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Use Browser - Close RPA Challenge Browser Instance" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Framework\CloseAllApplications.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="ui:UiElement" x:Key="in_Browser_RPAChallenge">
+            <mva:VisualBasicValue x:TypeArguments="ui:UiElement" ExpressionText="RPAChallenge_Browser" />
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+  </Sequence>
+</Activity>
