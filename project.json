@@ -3,7 +3,7 @@
   "description": "Works queue items provided by RPAChallenge_InputForms_Dispatcher",
   "main": "Main.xaml",
   "dependencies": {
-    "DBEV.RPAChallenge.Activites": "[1.0.0-alpha.7]",
+    "DBEV.RPAChallenge.Activites": "[1.0.0]",
     "UiPath.Excel.Activities": "[2.17.0-preview]",
     "UiPath.System.Activities": "[22.10.4]",
     "UiPath.Testing.Activities": "[22.12.0-preview]",
