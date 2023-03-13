@@ -73,7 +73,7 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Given&#xA;-Config loaded&#xA;-Test Queue Item ready to work&#xA;When&#xA;-Execute GetTransactionData worflow&#xA;Then&#xA;-Queue Item loaded successfully&#xA;Finally&#xA;-Close Queue Item" DisplayName="Sequence - Get Test Queue Item Data" sap:VirtualizedContainerService.HintSize="658,1631" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Given&#xA;-Config loaded&#xA;-Test Queue Item ready to work&#xA;When&#xA;-Execute GetTransactionData workflow&#xA;Then&#xA;-Queue Item loaded successfully&#xA;Finally&#xA;-Close Queue Item" DisplayName="Sequence - Get Test Queue Item Data" sap:VirtualizedContainerService.HintSize="658,1631" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
       <Variable x:TypeArguments="x:Int32" Default="1" Name="TransactionNumber" />
